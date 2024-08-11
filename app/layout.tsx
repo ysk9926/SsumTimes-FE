@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import CustomProvider from "@/components/layout/customProvider";
+import TopNavBar from "@/components/navgation/topNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </Head>
       <body className={`font-pretendard`}>
-        <CustomProvider>{children}</CustomProvider>
+        <CustomProvider>
+          <TopNavBar />
+          {children}
+        </CustomProvider>
       </body>
     </html>
   );
