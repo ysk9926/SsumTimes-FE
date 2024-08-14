@@ -5,7 +5,7 @@ interface HoverInformationProps {
 export default function HoverInformation({ setIsHovered }: HoverInformationProps) {
   return (
     <div
-      className=" absolute top-14 left-0 w-28 bg-slate-200 text-black text-sm"
+      className=" absolute top-14 left-0 w-28 bg-white text-black text-sm"
       onMouseEnter={() => setIsHovered(true)}
       //   onMouseLeave={() => setIsHovered(false)}
     >

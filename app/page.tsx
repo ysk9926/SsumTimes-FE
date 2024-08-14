@@ -1,3 +1,10 @@
+import TitleImage from "@/components/mainPage/titleImage";
+
 export default function Home() {
-  return <div>home</div>;
+  return (
+    <div>
+      <TitleImage />
+      home
+    </div>
+  );
 }

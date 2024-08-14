@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
         />
       </Head>
-      <body className={`font-pretendard`}>
+      <body className={`font-pretendard relative`}>
         <CustomProvider>
           <TopNavBar />
           {children}
