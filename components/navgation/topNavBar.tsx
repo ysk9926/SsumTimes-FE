@@ -27,7 +27,7 @@ export default function TopNavBar() {
     user: <TagUser className="text-danger" fill="currentColor" size={30} />,
   };
   return (
-    <Navbar maxWidth="full" position="sticky">
+    <Navbar maxWidth="full" position="sticky" height="80px">
       <NavbarContent>
         <NavbarItem>
           <Button
