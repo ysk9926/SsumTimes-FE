@@ -1,5 +1,6 @@
 "use client";
 
+import { NextUIProvider } from "@nextui-org/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useState } from "react";
@@ -11,7 +12,7 @@ export default function CustomProvider({ children }: { children: React.ReactNode
     <RecoilRoot>
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
-        {children}
+        <NextUIProvider>{children}</NextUIProvider>
       </QueryClientProvider>
     </RecoilRoot>
   );

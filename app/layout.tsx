@@ -4,6 +4,7 @@ import "./globals.css";
 import Head from "next/head";
 import CustomProvider from "@/components/layout/customProvider";
 import TopNavBar from "@/components/navgation/topNavBar";
+import Logo from "@/components/navgation/logo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body className={`font-pretendard relative`}>
         <CustomProvider>
+          {/* <Logo /> */}
           <TopNavBar />
           {children}
         </CustomProvider>
