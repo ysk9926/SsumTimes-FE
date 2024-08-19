@@ -4,6 +4,8 @@ import "./globals.css";
 import Head from "next/head";
 import CustomProvider from "@/components/layout/customProvider";
 import TopNavBar from "@/components/navgation/topNavBar";
+import Logo from "@/components/navgation/logo";
+import Fotter from "@/components/navgation/fotter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +25,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css"
         />
       </Head>
-      <body className={`font-pretendard`}>
+      <body className={`font-pretendard relative`}>
         <CustomProvider>
+          {/* <Logo /> */}
           <TopNavBar />
           {children}
+          <Fotter />
         </CustomProvider>
       </body>
     </html>
