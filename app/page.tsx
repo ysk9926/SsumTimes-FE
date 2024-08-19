@@ -2,7 +2,6 @@ import ContentOriginal from "@/components/mainPage/contentOriginal";
 import NavigateImage from "@/components/mainPage/navigateImage";
 import Review from "@/components/mainPage/review";
 import TitleImage from "@/components/mainPage/titleImage";
-import Fotter from "@/components/navgation/fotter";
 
 export default function Home() {
   return (
