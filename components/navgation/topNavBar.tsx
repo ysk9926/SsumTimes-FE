@@ -12,9 +12,10 @@ import {
   Dropdown,
   DropdownMenu,
 } from "@nextui-org/react";
-import AccountButton from "./button/accountButton";
-import MenuButton from "./button/menuButton";
+import Image from "next/image";
+import Logo from "../../image/logo.png";
 import { ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale } from "./icons";
+import { link } from "fs";
 
 export default function TopNavBar() {
   const icons = {
@@ -27,14 +28,16 @@ export default function TopNavBar() {
     user: <TagUser className="text-danger" fill="currentColor" size={30} />,
   };
   return (
-    <Navbar maxWidth="full" position="sticky" height="80px">
-      <NavbarContent>
+    <Navbar maxWidth="full" position="sticky" height="140px">
+      <NavbarContent className=" -mb-16">
         <NavbarItem>
           <Button
             disableRipple
             className="p-0 bg-transparent data-[hover=true]:bg-transparent"
             radius="sm"
             variant="light"
+            as={Link}
+            href="/about"
           >
             썸타임즈 소개
           </Button>
@@ -82,9 +85,11 @@ export default function TopNavBar() {
         </Dropdown>
       </NavbarContent>
       <NavbarContent justify="center">
-        <p>logo</p>
+        <Button disableRipple as={Link} href="/" className=" bg-inherit w-[400px] h-[100px] relative">
+          <Image src={Logo} alt="logoImage" fill={true} />
+        </Button>
       </NavbarContent>
-      <NavbarContent justify="end">
+      <NavbarContent justify="end" className=" -mb-16">
         <Button as={Link} href="#" variant="light" disableRipple>
           회원가입
         </Button>
@@ -93,13 +98,5 @@ export default function TopNavBar() {
         </Button>
       </NavbarContent>
     </Navbar>
-    // <div>
-    //   {/* <div className=" h-14 flex justify-center items-center">logo</div> */}
-    //   {/* <div className=" flex justify-between items-center bg-white px-10 text-black text-sm sticky w-full z-50">
-    //     <MenuButton />
-    //     <AccountButton />
-    //   </div> */}
-
-    // </div>
   );
 }
