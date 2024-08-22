@@ -1,6 +1,7 @@
 import { Button, Card, CardFooter, Image, image } from "@nextui-org/react";
+import { IImageList } from "./image";
 
-export default function ThreeImage({ imageList }: { imageList: IImage[] }) {
+export default function ThreeImage({ imageList }: { imageList: IImageList[] }) {
   return (
     <div className="grid grid-cols-3 gap-20">
       {imageList.map((image, index) => (
