@@ -68,13 +68,15 @@ interface IImage {
 }
 
 export const titleImageInfo: IImage = {
-  src: "https://www.agoda.com/wp-content/uploads/2023/12/Phuket-couples-1244x700.jpg",
+  src: "https://shoppingmall-product-image.s3.ap-northeast-2.amazonaws.com/product_detail_img/7abd3d43-b073-4654-82b1-ba0df1235b2b.jpg",
+  // src: "https://www.agoda.com/wp-content/uploads/2023/12/Phuket-couples-1244x700.jpg",
   alt: "couple_image",
   class: "w-full h-full absolute -z-10",
 };
 
 export const backgroundImageInfo: IImage = {
-  src: "https://plus.unsplash.com/premium_photo-1676667573109-273586405c96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  src: "https://shoppingmall-product-image.s3.ap-northeast-2.amazonaws.com/product_detail_img/f2078553-01f5-42e4-94ba-271c79e9b6fb.jpg",
+  // src: "https://plus.unsplash.com/premium_photo-1676667573109-273586405c96?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   alt: "bgImage",
   class: "",
 };

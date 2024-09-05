@@ -28,8 +28,8 @@ export default function TopNavBar() {
     user: <TagUser className="text-danger" fill="currentColor" size={30} />,
   };
   return (
-    <Navbar maxWidth="full" position="sticky" height="140px">
-      <NavbarContent className=" -mb-16">
+    <Navbar maxWidth="full" position="sticky" height="90px">
+      <NavbarContent>
         <NavbarItem>
           <Button
             disableRipple
@@ -48,6 +48,8 @@ export default function TopNavBar() {
             className="p-0 bg-transparent data-[hover=true]:bg-transparent"
             radius="sm"
             variant="light"
+            as={Link}
+            href="/apply"
           >
             썸타임즈 신청하기
           </Button>
@@ -85,11 +87,11 @@ export default function TopNavBar() {
         </Dropdown>
       </NavbarContent>
       <NavbarContent justify="center">
-        <Button disableRipple as={Link} href="/" className=" bg-inherit w-[400px] h-[100px] relative">
+        <Button disableRipple as={Link} href="/" className=" bg-inherit w-[200px] h-[50px] relative">
           <Image src={Logo} alt="logoImage" fill={true} />
         </Button>
       </NavbarContent>
-      <NavbarContent justify="end" className=" -mb-16">
+      <NavbarContent justify="end">
         <Button as={Link} href="#" variant="light" disableRipple>
           회원가입
         </Button>
