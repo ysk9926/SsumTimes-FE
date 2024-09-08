@@ -68,4 +68,6 @@ interface IApplyForm {
   drinkingCapacity: string; // 주량은 어느 정도이신가요? (※ 기분 좋게 마실 수 있는 정도 기준)
   applicationMotivation: string; // 하트트래블 신청 동기 또는 기대되는 점
   referrerNameAndPhoneLast4Digits?: string; // 추천인이 있다면 이름과 휴대전화번호 뒤 4자리
+  reuse: boolean;
+  receiving: boolean;
 }

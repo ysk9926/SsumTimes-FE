@@ -1,10 +1,9 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import Agreement from "./agreement";
 import RedDot from "./redDot";
 import NomalInput from "./input/nomalInput";
-import { Select, SelectItem } from "@nextui-org/react";
 import FileInput from "./input/fileInput";
 import TextareaInput from "./input/textareaInput";
 import SelectInput from "./input/selectInput";
@@ -16,31 +15,26 @@ import {
   religionOptions,
   smokingOptions,
 } from "./selectItems";
+import MultiCheckboxInput from "./input/multiSelectInput";
+import AgreementCheckbox from "./input/checkbox";
+import { Button } from "@nextui-org/react";
 
 export default function Form() {
   // 로그인 폼
-  const {
-    register,
-    formState: { errors, isValid },
-    watch,
-    handleSubmit,
-    setError,
-    getValues,
-    clearErrors,
-  } = useForm<IApplyForm>({
+  const { register, watch, setValue, handleSubmit } = useForm<IApplyForm>({
     mode: "onChange",
   });
+
+  // submit 함수 추가
+  const onSubmitValid: SubmitHandler<IApplyForm> = async (data) => {};
 
   const otherReligion = watch("otherReligion");
   return (
     <div className="w-[900px] text-sm">
-      <form className=" flex flex-col">
+      <form className=" flex flex-col" onSubmit={handleSubmit(onSubmitValid)}>
         <Agreement />
         {/* 개인정보 수집 동의 */}
-        <label className=" mb-10">
-          <input type="checkbox" {...register("agreement", { required: true })} />
-          <span className=" ml-2">개인정보 수집 및 이용에 동의합니다.</span>
-        </label>
+        <AgreementCheckbox register={register} labelText="개인정보 수집 및 이용에 동의합니다." fieldName="agreement" />
         {/* 이름 */}
         <NomalInput
           register={register}
@@ -302,12 +296,78 @@ export default function Form() {
           required={true}
         />
         {/* 덜 중요하다고 생각하는 것 */}
+        <MultiCheckboxInput
+          register={register}
+          setValue={setValue}
+          labelText='이성을 만날 때"덜 중요하다"고 생각하는 것들을 모두 선택해주세요.'
+          fieldName="lessImportantInPartner"
+          checkboxOptions={importInPartnerOptions}
+        />
         {/* 만나고 싶은 사람의 특징 */}
+        <TextareaInput
+          register={register}
+          fieldName="otherPartnerPreferences"
+          labelText="만나고 싶은 분의 다른 특징이 있다면 알려주세요.(그 외 모든 사항)"
+          required={false}
+        />
         {/* 이것만은 안된다 */}
+        <TextareaInput
+          register={register}
+          fieldName="absoluteNoInPartner"
+          labelText='이성을 만날 때 "상대방의 이것 만큼은 절대 안된다!"하는 것이 있다면?'
+          required={false}
+        />
         {/* 못먹는 음식 */}
+        <NomalInput
+          register={register}
+          labelText='못 드시는 음식이 있다면 꼭 적어주세요. (없는 경우 "없음" 기재)'
+          fieldName="foodDislikes"
+          placeHolder=""
+        />
         {/* 주량 */}
+        <NomalInput
+          register={register}
+          labelText="주량은 어느 정도이신가요?(기분 좋게 마실 수 있는 정도 기준)"
+          fieldName="drinkingCapacity"
+          placeHolder=""
+        />
         {/* 신청 동기 */}
+        <TextareaInput
+          register={register}
+          fieldName="applicationMotivation"
+          labelText="썸타임즈 신청 동기는 무엇인가요? 또는 어떤 점들이 기대되시나요?"
+          required={true}
+        />
         {/* 추천인 */}
+        <label className=" mb-10">
+          <div className=" flex items-center mb-2">
+            <span>
+              [추천인]썸타임즈를 추천해준 친구가 있다면, 추천해주신 썸타임즈 회원의 이름과 휴대전화번호 뒤 4자리를
+              적어주세요.(예: 홍길동, 1234)
+            </span>
+          </div>
+          <input
+            type="string"
+            {...register("referrerNameAndPhoneLast4Digits", { required: true })}
+            className="w-full border border-gray-200 h-8 px-2 rounded-sm focus:border-black outline-none"
+          />
+        </label>
+        {/* 신청서 재활용 동의 */}
+        <span className="mb-3">
+          앞으로의 썸타임즈 신청 시 본 신청서의 내용을 참가자 선정에 활용하는 것에 동의합니다. (체크하시면 매번 신청서를
+          다시 작성하실 필요가 없습니다. 의사 철회 및 신청서 파기 요청은 "마이페이지 &gt; 1:1문의"에 남겨주시면 반영해
+          드립니다.)
+        </span>
+        <AgreementCheckbox register={register} labelText="네, 동의합니다." fieldName="reuse" />
+        {/* 수신 동의 */}
+        <span className="mb-3">
+          본 신청서의 내용을 바탕으로 새로운 모임 참가 추천을 받겠습니다. (체크하시면 개별적으로 썸타임즈 회차 추천
+          연락을 드립니다. 의사 철회 및 신청서 파기 요청은 "마이페이지 &gt; 1:1문의"에 남겨주시면 반영해 드립니다.)
+        </span>
+        <AgreementCheckbox register={register} labelText="네, 동의합니다." fieldName="reuse" />
+        <Button radius="none" type="submit">
+          제출하기
+        </Button>
       </form>
     </div>
   );
