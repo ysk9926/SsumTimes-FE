@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import CustomProvider from "@/components/layout/customProvider";
-import TopNavBar from "@/components/navgation/topNavBar";
-import Fotter from "@/components/navgation/fotter";
+import TopNavBar from "@/components/navbar/topNavbar";
+import Footer from "@/components/navbar/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,10 +26,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </Head>
       <body className={`font-pretendard relative`}>
         <CustomProvider>
-          {/* <Logo /> */}
-          <TopNavBar />
-          {children}
-          <Fotter />
+          {/* 모바일 사이즈 */}
+          <div className="mobile:hidden">
+            <TopNavBar />
+            {children}
+            <Footer />
+          </div>
+          {/* 모바일 이상 */}
+          <div className="hidden mobile:flex items-center justify-center min-h-screen">
+            <p className="text-center text-lg">
+              이 페이지는 모바일 사이즈에 최적화되어 있습니다. 화면 크기를 줄여주세요.
+            </p>
+          </div>
         </CustomProvider>
       </body>
     </html>

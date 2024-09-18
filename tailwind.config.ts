@@ -13,6 +13,12 @@ const config: Config = {
       fontFamily: {
         pretendard: ["Pretendard", "sans-serif"],
       },
+      colors: {
+        color_main: "#D7474C",
+      },
+      screens: {
+        mobile: "420px",
+      },
     },
   },
   plugins: [nextui()],
