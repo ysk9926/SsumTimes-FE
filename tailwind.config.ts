@@ -17,7 +17,7 @@ const config: Config = {
         color_main: "#D7474C",
       },
       screens: {
-        mobile: "420px",
+        mobile: "440px",
       },
     },
   },

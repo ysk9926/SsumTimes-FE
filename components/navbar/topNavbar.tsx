@@ -4,15 +4,19 @@ import ILogo from "@/icon/global/logo";
 import IMenuBtn from "@/icon/nav/menuBtn";
 import { Modal, Navbar, NavbarContent, useDisclosure } from "@nextui-org/react";
 import Menu from "./menu";
+import { useRouter } from "next/navigation";
 
 export default function TopNavBar() {
   const { isOpen, onClose, onOpen, onOpenChange } = useDisclosure();
+  const router = useRouter();
+
+  const handleClickLogo = () => {
+    router.push("/");
+    setTimeout(() => {
+      window.location.reload();
+    }, 100);
+  };
   return (
-    // <div className=" w-[100%] h-[60px] flex justify-around items-center">
-    //   <IMenuBtn />
-    //   <ILogo />
-    //   <span className=" font-extralight text-xs">로그인</span>
-    // </div>
     <Navbar>
       <NavbarContent>
         <div onClick={onOpen}>
@@ -29,7 +33,7 @@ export default function TopNavBar() {
           <Menu onClose={onClose} />
         </Modal>
       </NavbarContent>
-      <NavbarContent>
+      <NavbarContent onClick={handleClickLogo}>
         <ILogo />
       </NavbarContent>
       <NavbarContent justify="end">

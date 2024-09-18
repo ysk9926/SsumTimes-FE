@@ -2,12 +2,46 @@ import IArrow from "@/icon/global/arrow";
 import IClose from "@/icon/global/close";
 import ILogo from "@/icon/global/logo";
 import { Button, ModalContent, ModalHeader } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 interface IMenu {
   onClose: () => void;
 }
 
 export default function Menu({ onClose }: IMenu) {
+  const router = useRouter();
+
+  const handleNavigation = (menu: string) => {
+    switch (menu) {
+      case "썸타임즈 소개":
+        router.push("/about");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100); // 약간의 지연 시간을 줍니다.
+        break;
+      case "썸타임즈 신청하기":
+        router.push("/apply");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+        break;
+      case "자주 묻는 질문":
+        router.push("/faq");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+        break;
+      case "후기":
+        router.push("/reviews");
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <ModalContent>
       {(onclose) => (
@@ -31,28 +65,28 @@ export default function Menu({ onClose }: IMenu) {
           {/* menu */}
           <div className=" pl-7 mt-10 pr-14 space-y-4">
             {/* info */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center" onClick={() => handleNavigation("썸타임즈 소개")}>
               <span>썸타임즈 소개</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* apply */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center" onClick={() => handleNavigation("썸타임즈 신청하기")}>
               <span>썸타임즈 신청하기</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* qa */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center" onClick={() => handleNavigation("자주 묻는 질문")}>
               <span>자주 묻는 질문</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* review */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center" onClick={() => handleNavigation("후기")}>
               <span>후기</span>
               <div className="mt-1">
                 <IArrow />
