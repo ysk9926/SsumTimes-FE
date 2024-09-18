@@ -7,11 +7,6 @@ export default function IQa() {
       height="42.995"
       viewBox="0 0 36.949 42.995"
     >
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="사각형_45" data-name="사각형 45" width="36.949" height="42.995" fill="none" />
-        </clipPath>
-      </defs>
       <g id="그룹_83" data-name="그룹 83" transform="translate(0 0)">
         <g id="그룹_82" data-name="그룹 82" transform="translate(0 0)" clip-path="url(#clip-path)">
           <path

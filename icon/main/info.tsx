@@ -7,11 +7,6 @@ export default function IInfo() {
       height="33.674"
       viewBox="0 0 42.637 33.674"
     >
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="사각형_43" data-name="사각형 43" width="42.637" height="33.674" fill="none" />
-        </clipPath>
-      </defs>
       <g id="그룹_79" data-name="그룹 79" transform="translate(0 0)">
         <g id="그룹_78" data-name="그룹 78" transform="translate(0 0)" clip-path="url(#clip-path)">
           <path

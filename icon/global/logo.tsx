@@ -9,11 +9,6 @@ export default function ILogo() {
       height="30"
       viewBox="0 0 120 30"
     >
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="사각형_32" data-name="사각형 32" width="120" height="40" fill="none" />
-        </clipPath>
-      </defs>
       <g id="그룹_69" data-name="그룹 69" clip-path="url(#clip-path)">
         <g id="그룹_68" data-name="그룹 68" transform="translate(0 0)">
           <g id="그룹_67" data-name="그룹 67" clip-path="url(#clip-path)">

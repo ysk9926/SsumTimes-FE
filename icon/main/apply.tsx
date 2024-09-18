@@ -7,11 +7,6 @@ export default function IApply() {
       height="36.219"
       viewBox="0 0 37.285 36.219"
     >
-      <defs>
-        <clipPath id="clip-path">
-          <rect id="사각형_44" data-name="사각형 44" width="37.285" height="36.219" fill="none" />
-        </clipPath>
-      </defs>
       <g id="그룹_81" data-name="그룹 81" transform="translate(0 0)">
         <g id="그룹_80" data-name="그룹 80" transform="translate(0 0)" clip-path="url(#clip-path)">
           <path
