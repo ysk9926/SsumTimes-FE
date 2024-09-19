@@ -8,7 +8,12 @@ export default function IApply() {
       viewBox="0 0 37.285 36.219"
     >
       <g id="그룹_81" data-name="그룹 81" transform="translate(0 0)">
-        <g id="그룹_80" data-name="그룹 80" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g
+          id="그룹_80"
+          data-name="그룹 80"
+          transform="translate(0 0)"
+          clipPath="url(#clip-path)"
+        >
           <path
             id="패스_78"
             data-name="패스 78"
@@ -16,7 +21,13 @@ export default function IApply() {
             transform="translate(0 0)"
             fill="#7bc5cc"
           />
-          <path id="패스_79" data-name="패스 79" d="M25.692,13.315Z" transform="translate(-4.648 -2.409)" fill="#fff" />
+          <path
+            id="패스_79"
+            data-name="패스 79"
+            d="M25.692,13.315Z"
+            transform="translate(-4.648 -2.409)"
+            fill="#fff"
+          />
           <path
             id="패스_80"
             data-name="패스 80"

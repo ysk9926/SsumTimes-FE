@@ -8,7 +8,12 @@ export default function IInfo() {
       viewBox="0 0 42.637 33.674"
     >
       <g id="그룹_79" data-name="그룹 79" transform="translate(0 0)">
-        <g id="그룹_78" data-name="그룹 78" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g
+          id="그룹_78"
+          data-name="그룹 78"
+          transform="translate(0 0)"
+          clipPath="url(#clip-path)"
+        >
           <path
             id="패스_76"
             data-name="패스 76"

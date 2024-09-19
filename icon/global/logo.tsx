@@ -5,16 +5,16 @@ export default function ILogo() {
       data-name="그룹 70"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="120"
+      width="105"
       height="30"
-      viewBox="0 0 120 30"
+      viewBox="0 0 105 30"
     >
-      <g id="그룹_69" data-name="그룹 69" clip-path="url(#clip-path)">
+      <g id="그룹_69" data-name="그룹 69" clipPath="url(#clip-path)">
         <g id="그룹_68" data-name="그룹 68" transform="translate(0 0)">
-          <g id="그룹_67" data-name="그룹 67" clip-path="url(#clip-path)">
+          <g id="그룹_67" data-name="그룹 67" clipPath="url(#clip-path)">
             <g id="그룹_66" data-name="그룹 66" opacity="0.97">
               <g id="그룹_65" data-name="그룹 65">
-                <g id="그룹_64" data-name="그룹 64" clip-path="url(#clip-path)">
+                <g id="그룹_64" data-name="그룹 64" clipPath="url(#clip-path)">
                   <path
                     id="패스_18"
                     data-name="패스 18"

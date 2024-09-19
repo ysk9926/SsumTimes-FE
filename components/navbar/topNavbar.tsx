@@ -19,7 +19,7 @@ export default function TopNavBar() {
   return (
     <Navbar>
       <NavbarContent>
-        <div onClick={onOpen}>
+        <div className="w-10" onClick={onOpen}>
           <IMenuBtn />
         </div>
         <Modal

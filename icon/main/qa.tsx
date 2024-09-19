@@ -8,7 +8,12 @@ export default function IQa() {
       viewBox="0 0 36.949 42.995"
     >
       <g id="그룹_83" data-name="그룹 83" transform="translate(0 0)">
-        <g id="그룹_82" data-name="그룹 82" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <g
+          id="그룹_82"
+          data-name="그룹 82"
+          transform="translate(0 0)"
+          clipPath="url(#clip-path)"
+        >
           <path
             id="패스_81"
             data-name="패스 81"

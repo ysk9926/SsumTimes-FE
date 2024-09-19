@@ -37,6 +37,16 @@ export default function Menu({ onClose }: IMenu) {
     }
   };
 
+  const navigateSignup = () => {
+    router.push("/account");
+    onClose();
+  };
+
+  const navigateLogin = () => {
+    router.push("/account/login");
+    onClose();
+  };
+
   return (
     <ModalContent>
       {(onclose) => (
@@ -51,37 +61,53 @@ export default function Menu({ onClose }: IMenu) {
           {/* account */}
           <div className="bg-[#F5F5F5] h-14 flex pl-7">
             <div className="flex justify-start items-center">
-              <span className="text-xs text-color_main">로그인 하기</span>
+              <span className="text-xs text-color_main" onClick={navigateLogin}>
+                로그인 하기
+              </span>
             </div>
             <div className="flex justify-start items-center pl-5">
-              <span className="text-xs">회원가입 하기</span>
+              <span className="text-xs" onClick={navigateSignup}>
+                회원가입 하기
+              </span>
             </div>
           </div>
           {/* menu */}
           <div className=" pl-7 mt-10 pr-14 space-y-4">
             {/* info */}
-            <div className="flex justify-between items-center" onClick={() => handleNavigation("about")}>
+            <div
+              className="flex justify-between items-center"
+              onClick={() => handleNavigation("about")}
+            >
               <span>썸타임즈 소개</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* apply */}
-            <div className="flex justify-between items-center" onClick={() => handleNavigation("apply")}>
+            <div
+              className="flex justify-between items-center"
+              onClick={() => handleNavigation("apply")}
+            >
               <span>썸타임즈 신청하기</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* qa */}
-            <div className="flex justify-between items-center" onClick={() => handleNavigation("faq")}>
+            <div
+              className="flex justify-between items-center"
+              onClick={() => handleNavigation("faq")}
+            >
               <span>자주 묻는 질문</span>
               <div className="mt-1">
                 <IArrow />
               </div>
             </div>
             {/* review */}
-            <div className="flex justify-between items-center" onClick={() => handleNavigation("reviews")}>
+            <div
+              className="flex justify-between items-center"
+              onClick={() => handleNavigation("reviews")}
+            >
               <span>후기</span>
               <div className="mt-1">
                 <IArrow />
