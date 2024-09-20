@@ -9,6 +9,7 @@ interface AgreementCheckboxProps {
   required: boolean;
   fieldName: string; // 필드 이름
   checked: boolean; // 체크 상태 전달
+  error?: any;
 }
 
 export default function RequiredCheckbox({
@@ -17,6 +18,7 @@ export default function RequiredCheckbox({
   required,
   fieldName,
   checked,
+  error,
 }: AgreementCheckboxProps) {
   return (
     <label className="mb-5">
@@ -25,9 +27,10 @@ export default function RequiredCheckbox({
         color="default"
         isSelected={checked} // 상태 전달
         size="sm"
+        // color={error ? "danger" : "default"}
       >
         <div>
-          <span className="text-xs">{labelText}</span>
+          <span className={`text-xs ${error ? "text-red-500" : ""}`}>{labelText}</span>
           {required ? (
             <span className="text-xs text-red-500 pl-3">(필수)</span>
           ) : (

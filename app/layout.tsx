@@ -5,6 +5,7 @@ import Head from "next/head";
 import CustomProvider from "@/components/layout/customProvider";
 import TopNavBar from "@/components/navbar/topNavbar";
 import Footer from "@/components/navbar/footer";
+import AuthCheck from "@/components/layout/authCheck";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CustomProvider>
           {/* 모바일 사이즈 */}
           <div className="mobile:hidden">
+            <AuthCheck />
             <TopNavBar />
             {children}
             <Footer />

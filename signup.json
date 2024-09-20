@@ -1,0 +1,14 @@
+{
+  "userId": "testtt",
+  "userPwd": "test",
+  "username": "test",
+  "contactNumber": "01078977897",
+  "gender": "MALE",
+  "location": "set",
+  "job": "set",
+  "incomeRange": "FROM_8000_TO_10000",
+  "height": "152",
+  "importantFactors": "sete",
+  "agreedToSms": true,
+  "agreedToEmail": true
+}

@@ -2,9 +2,11 @@
 
 import ILogo from "@/icon/global/logo";
 import IMenuBtn from "@/icon/nav/menuBtn";
-import { Modal, Navbar, NavbarContent, useDisclosure } from "@nextui-org/react";
+import { Avatar, Modal, Navbar, NavbarContent, useDisclosure } from "@nextui-org/react";
 import Menu from "./menu";
 import { useRouter } from "next/navigation";
+import { useRecoilValue } from "recoil";
+import { loggedInVar, userState } from "@/atom";
 
 export default function TopNavBar() {
   const { isOpen, onClose, onOpen, onOpenChange } = useDisclosure();
@@ -12,10 +14,11 @@ export default function TopNavBar() {
 
   const handleClickLogo = () => {
     router.push("/");
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
   };
+
+  const loggedInV = useRecoilValue(loggedInVar);
+  const userstate = useRecoilValue(userState);
+
   return (
     <Navbar>
       <NavbarContent>
@@ -36,9 +39,15 @@ export default function TopNavBar() {
       <NavbarContent onClick={handleClickLogo}>
         <ILogo />
       </NavbarContent>
-      <NavbarContent justify="end">
-        <span className=" font-extralight text-xs">로그인</span>
-      </NavbarContent>
+      {loggedInV ? (
+        <NavbarContent justify="end">
+          <Avatar src={userstate.profileImagePath} />
+        </NavbarContent>
+      ) : (
+        <NavbarContent justify="end" onClick={() => router.push("/account/login")}>
+          <span className=" font-extralight text-xs">로그인</span>
+        </NavbarContent>
+      )}
     </Navbar>
   );
 }
