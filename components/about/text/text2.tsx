@@ -1,11 +1,11 @@
+import { bgImage1_long } from "@/image/image";
 import Image from "next/image";
-import BgImage from "../../../image/배경 3.jpg";
 
 export default function Text2() {
   return (
     <div>
       {/* image */}
-      <Image src={BgImage} alt="" objectFit="fit" />
+      <Image src={bgImage1_long} alt="" objectFit="fit" width={500} height={300} />
       {/* text */}
       <div className="bg-[#EFEFEF] flex flex-col items-center py-7">
         <div className="space-y-1 mb-7">

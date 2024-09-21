@@ -10,12 +10,12 @@ export default function Agreement() {
       <div className=" border border-gray-200 p-2 flex flex-col h-[150px] overflow-auto">
         {/* header */}
         <span className=" mb-4">
-          입력하신 개인정보는 하트트래블 참가자 선정, 선정 결과 안내 및 일정 안내 목적으로만 활용됩니다.
+          입력하신 개인정보는 썸타임즈 참가자 선정, 선정 결과 안내 및 일정 안내 목적으로만 활용됩니다.
         </span>
         {/* body */}
         <div className=" flex flex-col space-y-1 mb-4">
-          <span>- 수집 및 이용 주체 : 주식회사 케미컴퍼니</span>
-          <span>- 수집 및 이용 목적 : 하트트래블 서비스 제공(참가자 선정, 선정 결과 안내, 일정 안내), 고객 관리</span>
+          <span>- 수집 및 이용 주체 : P.D & P</span>
+          <span>- 수집 및 이용 목적 : 썸타임즈 서비스 제공(참가자 선정, 선정 결과 안내, 일정 안내), 고객 관리</span>
           <span>
             - 수집 및 이용 항목 : 이름, 휴대전화번호, 성별, 거주지, 생년월일, 직업, 직장, 직무, 소득, 학력, 키, 체중,
             신청자 사진, 기타 신청서 내용(취미, 취향, 가치관, 가정환경, 이상형 등), 각 항목 증빙서류

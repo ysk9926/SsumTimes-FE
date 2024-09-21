@@ -1,11 +1,17 @@
+import { bgImage2 } from "@/image/image";
 import Image from "next/image";
-import BgImage from "../../image/배경 이미지 2.png";
-import BgImage2 from "../../image/배경 2.jpg";
 
 export default function Review() {
   return (
     <div className=" relative mt-20 h-[150px]">
-      <Image src={BgImage2} alt="" objectFit="cover" className="w-full h-[150px] absolute -z-10" />
+      <Image
+        src={bgImage2}
+        alt=""
+        objectFit="cover"
+        width={500}
+        height={150}
+        className="w-full h-[150px] absolute -z-10"
+      />
       <div className=" pl-4 pt-10">
         <div className="flex flex-col text-[#FFFFFF] text-sm font-extrabold mb-4">
           <span>참가자들의</span>

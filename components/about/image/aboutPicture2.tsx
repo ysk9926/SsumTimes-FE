@@ -1,12 +1,11 @@
 import Image from "next/image";
-import aboutPicture2 from "../../../image/소개 2.jpg";
-import aboutPicture3 from "../../../image/소개 3.jpg";
+import { about2, about3 } from "@/image/image";
 
 export default function AboutPicture2() {
   return (
     <div>
-      <Image src={aboutPicture2} alt="소개 사진 2" objectFit="cover" objectPosition="center" />
-      <Image src={aboutPicture3} alt="소개 사진 3" objectFit="cover" objectPosition="center" />
+      <Image src={about2} alt="소개 사진 2" objectFit="cover" objectPosition="center" width={500} height={300} />
+      <Image src={about3} alt="소개 사진 3" objectFit="cover" objectPosition="center" width={500} height={300} />
     </div>
   );
 }

@@ -93,44 +93,44 @@ export default function Form() {
           placeHolder=""
         />
         {/* 재직중인 회사 */}
-        <NomalInput
+        {/* <NomalInput
           register={register}
           labelText="재직 중인 회사가 있다면 알려주세요.(예: 케미컴퍼니, 없음 등)"
           fieldName="company"
           placeHolder=""
-        />
+        /> */}
         {/* 직무 */}
-        <NomalInput
+        {/* <NomalInput
           register={register}
           labelText="직군 또는 직무를 입력해주세요. (예: 대표, 기획, 영업 등)"
           fieldName="task"
           placeHolder=""
-        />
+        /> */}
         {/* 소득 */}
-        <SelectInput
+        {/* <SelectInput
           register={register}
           labelText="연 소득 구간을 선택해주세요."
           fieldName="earnings"
           selectOptions={earningOptions}
-        />
+        /> */}
         {/* 직업 증명파일 */}
-        <FileInput
+        {/* <FileInput
           register={register}
           labelText=" 직업 또는 직장 증빙 자료를 제출해주세요. (명함, 재직증명서, 사업자등록증 등) ※ 지금 제출이 어려우시면,
         참가자로 선정된 후 별도로 제출하시면 됩니다."
           fieldName="employmentVerification"
-        />
+        /> */}
         {/* 출신 고등학교 */}
-        <NomalInput
+        {/* <NomalInput
           register={register}
           labelText="졸업한 고등학교를 입력해주세요."
           fieldName="highSchool"
           placeHolder=""
-        />
+        /> */}
         {/* 출신 대학 */}
         <NomalInput register={register} labelText="대학교 전공을 입력해주세요." fieldName="major" placeHolder="" />
         {/* 석 박사 */}
-        <label className=" mb-10">
+        {/* <label className=" mb-10">
           <div className=" flex items-center mb-2">
             <span>석사 또는 박사 학위가 있다면 입력해주세요. (예: 한국대학교 OO학 석사, 박사)</span>
           </div>
@@ -139,7 +139,7 @@ export default function Form() {
             {...register("doc")}
             className="w-full border border-gray-200 h-8 px-2 rounded-sm focus:border-black outline-none"
           />
-        </label>
+        </label> */}
         {/* 얼굴사진 1 */}
         <FileInput
           register={register}
@@ -163,12 +163,12 @@ export default function Form() {
         {/* 체중 */}
         <NomalInput register={register} labelText="체중이 몇 kg이신가요?" fieldName="weight" placeHolder="" />
         {/* 외모 특징 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           labelText="더 자세히 표현하고 싶은 본인의 외모 특징/스타일이 있다면 적어주세요."
           fieldName="physicalCharacteristics"
           required={false}
-        />
+        /> */}
         {/* 음주 여부 */}
         <SelectInput
           register={register}
@@ -176,7 +176,6 @@ export default function Form() {
           fieldName="drinking"
           selectOptions={drinkingOptions}
         />
-
         {/* 흡연 여부 */}
         <SelectInput
           register={register}
@@ -215,33 +214,33 @@ export default function Form() {
           </div>
         </label>
         {/* 종교 참여도 */}
-        <SelectInput
+        {/* <SelectInput
           register={register}
           labelText="종교 관심도"
           fieldName="religionInterest"
           selectOptions={religionOptions}
-        />
+        /> */}
         {/* 취미 관심사 */}
         <TextareaInput
           register={register}
           labelText="본인의 취미, 특기, 관심사 등에 대해 알려주세요"
           fieldName="hobbiesOrInterests"
-          required={true}
+          required={false}
         />
         {/* 성향 가치관 */}
         <TextareaInput
           register={register}
           labelText="본인의 성향, 가치관, 연애 스타일 등에 대해 알려주세요"
           fieldName="personality"
-          required={true}
+          required={false}
         />
         {/* 본인의 매력 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           labelText="그 외 본인의 매력이나 어필 포인트가 있다면 적어주세요 (가정환경, 자산, 커리어 등)"
           fieldName="appealPoints"
           required={true}
-        />
+        /> */}
         {/* MBTI */}
         <label className=" mb-10">
           <div className=" flex items-center mb-2">
@@ -254,92 +253,92 @@ export default function Form() {
           />
         </label>
         {/* 이성을 보는 기준 */}
-        <SelectInput
+        {/* <SelectInput
           register={register}
           labelText="이성을 만날 때 가장(첫 번째로) 중요한 사항을 골라주세요"
           fieldName="mostImportantInPartner"
           selectOptions={importInPartnerOptions}
-        />
+        /> */}
         {/* 이성이 보는 기준의 이유 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           labelText="위에서 선택하신 '가장(첫 번째로) 중요한 사항'에 대해 설명해주세요"
           fieldName="explainMostImportant"
           required={true}
-        />
+        /> */}
         {/* 이성을 보는 기준 두번째 */}
-        <SelectInput
+        {/* <SelectInput
           register={register}
           labelText="이성을 만날 때 두 번쨰로 중요한 사항을 골라주세요"
           fieldName="secondMostImportantInPartner"
           selectOptions={importInPartnerOptions}
-        />
+        /> */}
         {/* 두번쨰를 선택한 이유 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           labelText="위에서 선택하신 '두 번째로 중요한 사항'에 대해 설명해주세요"
           fieldName="explainSecondMostImportant"
           required={true}
-        />
+        /> */}
         {/* 이성을 보는 기준 세번째 */}
-        <SelectInput
+        {/* <SelectInput
           register={register}
           labelText="이성을 만날 때 세 번쨰로 중요한 사항을 골라주세요"
           fieldName="thirdMostImportantInPartner"
           selectOptions={importInPartnerOptions}
-        />
+        /> */}
         {/* 세번쨰를 선택한 이유 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           labelText="위에서 선택하신 '세 번째로 중요한 사항'에 대해 설명해주세요"
           fieldName="explainThirdMostImportant"
           required={true}
-        />
+        /> */}
         {/* 덜 중요하다고 생각하는 것 */}
-        <MultiCheckboxInput
+        {/* <MultiCheckboxInput
           register={register}
           setValue={setValue}
           labelText='이성을 만날 때"덜 중요하다"고 생각하는 것들을 모두 선택해주세요.'
           fieldName="lessImportantInPartner"
           checkboxOptions={importInPartnerOptions}
-        />
+        /> */}
         {/* 만나고 싶은 사람의 특징 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           fieldName="otherPartnerPreferences"
           labelText="만나고 싶은 분의 다른 특징이 있다면 알려주세요.(그 외 모든 사항)"
           required={false}
-        />
+        /> */}
         {/* 이것만은 안된다 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           fieldName="absoluteNoInPartner"
           labelText='이성을 만날 때 "상대방의 이것 만큼은 절대 안된다!"하는 것이 있다면?'
           required={false}
-        />
+        /> */}
         {/* 못먹는 음식 */}
-        <NomalInput
+        {/* <NomalInput
           register={register}
           labelText='못 드시는 음식이 있다면 꼭 적어주세요. (없는 경우 "없음" 기재)'
           fieldName="foodDislikes"
           placeHolder=""
-        />
+        /> */}
         {/* 주량 */}
-        <NomalInput
+        {/* <NomalInput
           register={register}
           labelText="주량은 어느 정도이신가요?(기분 좋게 마실 수 있는 정도 기준)"
           fieldName="drinkingCapacity"
           placeHolder=""
-        />
+        /> */}
         {/* 신청 동기 */}
-        <TextareaInput
+        {/* <TextareaInput
           register={register}
           fieldName="applicationMotivation"
           labelText="썸타임즈 신청 동기는 무엇인가요? 또는 어떤 점들이 기대되시나요?"
           required={true}
-        />
+        /> */}
         {/* 추천인 */}
-        <label className=" mb-10">
+        {/* <label className=" mb-10">
           <div className=" flex items-center mb-2">
             <span>
               [추천인]썸타임즈를 추천해준 친구가 있다면, 추천해주신 썸타임즈 회원의 이름과 휴대전화번호 뒤 4자리를
@@ -351,7 +350,7 @@ export default function Form() {
             {...register("referrerNameAndPhoneLast4Digits", { required: true })}
             className="w-full border border-gray-200 h-8 px-2 rounded-sm focus:border-black outline-none"
           />
-        </label>
+        </label> */}
         {/* 신청서 재활용 동의 */}
         <span className="mb-3">
           앞으로의 썸타임즈 신청 시 본 신청서의 내용을 참가자 선정에 활용하는 것에 동의합니다. (체크하시면 매번 신청서를

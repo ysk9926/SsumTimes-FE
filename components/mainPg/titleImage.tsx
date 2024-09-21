@@ -1,11 +1,11 @@
 import Image from "next/image";
-import BG_IMAGE1 from "../../image/배경 1.jpg";
+import { bgImage1 } from "@/image/image";
 
 export default function TitleImage() {
   return (
     <div className=" relative overflow-x-hidden h-[350px]">
       <div className=" w-full min-w-[450px]  absolute -z-10 -left-8">
-        <Image src={BG_IMAGE1} alt="logoImage" objectPosition="center" objectFit="cover" />
+        <Image src={bgImage1} alt="logoImage" objectPosition="center" objectFit="cover" width={500} height={300} />
       </div>
       <div className="pt-14 pl-5">
         <span className="font-extrabold text-sm text-white">반쪽을 찾아 떠나는 특별한 1박2일</span>

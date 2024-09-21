@@ -3,7 +3,8 @@ import axios, { AxiosError, AxiosInstance } from "axios";
 
 // const BASE_URL = "https://xn--b60b50mo0tbqdri.xn--oi2b61z32a.xn--3e0b707e";
 // const BASE_URL = "http://43.201.15.20:8080/";
-const BASE_URL = "http://localhost:8081/";
+const BASE_URL = "https://썸타임즈.shop/";
+// const BASE_URL = "http://localhost:8081/";
 
 export const publicApi: AxiosInstance = axios.create({
   baseURL: BASE_URL,
