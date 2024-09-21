@@ -35,10 +35,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Footer />
           </div>
           {/* 모바일 이상 */}
-          <div className="hidden mobile:flex items-center justify-center min-h-screen">
-            <p className="text-center text-lg">
-              이 페이지는 모바일 사이즈에 최적화되어 있습니다. 화면 크기를 줄여주세요.
-            </p>
+          <div className="hidden mobile:flex items-center justify-center min-h-screen bg-[#F5F5F5]">
+            <div className="w-[440px] bg-white min-h-screen z-10">
+              <AuthCheck />
+              <TopNavBar />
+              {children}
+              <Footer />
+            </div>
           </div>
         </CustomProvider>
       </body>

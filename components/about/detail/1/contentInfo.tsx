@@ -2,6 +2,7 @@
 
 import { Button } from "@nextui-org/react";
 import Seperator from "../util/seperator";
+import { openInNewTab } from "@/components/hook/navigateGoogleForm";
 
 export default function Detail1ContentInfo() {
   return (
@@ -24,7 +25,9 @@ export default function Detail1ContentInfo() {
           <span>남자 : 150,000 원</span>
           <span>여자 : 120,000 원</span>
         </div>
-        <Button className="w-full mt-3 bg-[#D64247] text-white font-semibold tracking-[4.8px]">신청서 작성</Button>
+        <Button className="w-full mt-3 bg-[#D64247] text-white font-semibold tracking-[4.8px]" onPress={openInNewTab}>
+          신청서 작성
+        </Button>
       </div>
       <Seperator />
       <div className="text-[#D64247] text-sm flex flex-col items-center mt-4 space-y-4">

@@ -8,6 +8,7 @@ import { Avatar, Button, ModalContent, ModalHeader, divider } from "@nextui-org/
 import { useRouter } from "next/navigation";
 import { DefaultValue, useRecoilState, useRecoilValue } from "recoil";
 import { deleteCookie } from "../util/setCookie";
+import { openInNewTab } from "../hook/navigateGoogleForm";
 
 interface IMenu {
   onClose: () => void;
@@ -24,7 +25,8 @@ export default function Menu({ onClose }: IMenu) {
         onClose();
         break;
       case "apply":
-        router.push("/apply");
+        openInNewTab();
+        // router.push("https://forms.gle/eR6cYCeTRPmG956p6");
         onClose();
         break;
       case "faq":

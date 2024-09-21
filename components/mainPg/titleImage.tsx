@@ -3,8 +3,8 @@ import { bgImage1 } from "@/image/image";
 
 export default function TitleImage() {
   return (
-    <div className=" relative overflow-x-hidden h-[350px]">
-      <div className=" w-full min-w-[450px]  absolute -z-10 -left-8">
+    <div className=" relative overflow-x-clip h-[350px]">
+      <div className=" w-full min-w-[500px] h-[350px] overflow-hidden  absolute -z-10 -left-8">
         <Image src={bgImage1} alt="logoImage" objectPosition="center" objectFit="cover" width={500} height={300} />
       </div>
       <div className="pt-14 pl-5">

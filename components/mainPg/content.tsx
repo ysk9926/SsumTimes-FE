@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import IArrow from "@/icon/global/arrow";
 import { locationImage } from "@/image/image";
+import { useRouter } from "next/navigation";
 
 export default function Content() {
+  const router = useRouter();
+
   return (
     <div className=" mt-12 px-5">
       {/* title */}
@@ -18,7 +23,7 @@ export default function Content() {
       {/* content */}
       <div className="mt-5">
         {/* image */}
-        <div>
+        <div onClick={() => router.push("/about/detail/1")}>
           <Image
             src={locationImage}
             alt=""
@@ -30,7 +35,7 @@ export default function Content() {
           <span className="text-xs">(20/30) 10월 5일, 6일 부산 금정구 힐링 테마농장</span>
         </div>
         {/* image */}
-        <div>
+        <div onClick={() => router.push("/about/detail/2")}>
           <Image
             src={locationImage}
             alt=""

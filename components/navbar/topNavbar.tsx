@@ -28,9 +28,10 @@ export default function TopNavBar() {
         <Modal
           isOpen={isOpen}
           onOpenChange={onOpenChange}
-          placement="top"
+          placement="top-center"
           radius="none"
           size="full"
+          className=" max-w-[460px]"
           hideCloseButton={true}
         >
           <Menu onClose={onClose} />
