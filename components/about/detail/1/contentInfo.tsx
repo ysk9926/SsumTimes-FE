@@ -32,9 +32,7 @@ export default function Detail1ContentInfo() {
       <Seperator />
       <div className="text-[#D64247] text-sm flex flex-col items-center mt-4 space-y-4">
         <span>※ 신청서 작성하여 제출하셔야 신청 완료입니다.</span>
-        <span className="w-[70%]">
-          ※ 신청서 작성 후 참가자로 선정된 분에 한해 참가비(16만원) 결제는 별도로 진행합니다.
-        </span>
+        <span className="w-[70%]">※ 신청서 작성 후 참가자로 선정된 분에 한해 참가비 결제는 별도로 진행합니다.</span>
       </div>
     </>
   );
