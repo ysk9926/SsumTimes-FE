@@ -85,7 +85,7 @@ export default function Menu({ onClose }: IMenu) {
                 <Button size="sm" disableRipple className="bg-white">
                   마이페이지
                 </Button>
-                <Button size="sm" disableRipple className="bg-white">
+                <Button size="sm" disableRipple className="bg-white" onPress={handleLogOut}>
                   로그아웃
                 </Button>
               </div>

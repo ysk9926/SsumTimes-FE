@@ -2,8 +2,8 @@ import { getCookie, setCookie } from "@/components/util/setCookie";
 import axios, { AxiosError, AxiosInstance } from "axios";
 
 // const BASE_URL = "https://xn--b60b50mo0tbqdri.xn--oi2b61z32a.xn--3e0b707e";
-const BASE_URL = "http://43.201.15.20:8080/";
-// const BASE_URL = "http://localhost:8081/";
+// const BASE_URL = "http://43.201.15.20:8080/";
+const BASE_URL = "http://localhost:8081/";
 
 export const publicApi: AxiosInstance = axios.create({
   baseURL: BASE_URL,
@@ -47,10 +47,11 @@ privateApi.interceptors.response.use(
 
       console.log("403 새로운 토큰 발급", error.response.headers["authorization"]); // 모든 헤더 출력
       const authorizationHeader = error.response.headers["authorization"]; // 응답 헤더에서 'authorization' 가져오기
-
       const token = authorizationHeader.substring(7);
+      console.log("토큰 값", token);
       setCookie(token);
-      originRequest.header.Authorization = authorizationHeader;
+      console.log("쿠키 토큰 :", getCookie());
+      originRequest.headers["Authorization"] = authorizationHeader;
 
       return axios(originRequest);
     }

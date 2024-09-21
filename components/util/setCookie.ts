@@ -23,6 +23,8 @@ export const getCookie = () => {
 
 export const deleteCookie = () => {
   if (typeof document !== "undefined") {
-    document.cookie = "AccessTOKEN" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    const expirationDate = new Date(0); // 과거 날짜로 설정
+    const expires = "expires=" + expirationDate.toUTCString();
+    document.cookie = "AccessToken=; " + expires + "; path=/";
   }
 };
