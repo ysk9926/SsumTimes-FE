@@ -1,3 +1,6 @@
+import PrivacyPolicyBtn from "./legal/button/privacyPolicyBtn";
+import TermsOfServiceBtn from "./legal/button/termsOfServiceBtn";
+
 export default function Footer() {
   return (
     <div className="mt-10">
@@ -12,9 +15,9 @@ export default function Footer() {
           <span>고객지원 : 마이페이지 &gt; 1:1문의</span>
           <span>010-4796-4850 / ssomtimes22@gmail.com</span>
         </div>
-        <div className=" text-xs font-light mt-5 mb-10 space-x-3">
-          <span>이용약관</span>
-          <span>개인정보처리방침</span>
+        <div className="flex text-xs font-light mt-5 mb-10 space-x-3">
+          <TermsOfServiceBtn />
+          <PrivacyPolicyBtn />
         </div>
       </div>
     </div>

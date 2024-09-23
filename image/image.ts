@@ -1,4 +1,4 @@
-// 배경
+// 배경1
 
 export const bgImage1 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/6af11fb0-9bfd-442f-b06f-6a0972d4c5c8.jpg";
