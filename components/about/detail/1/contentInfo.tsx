@@ -17,13 +17,13 @@ export default function Detail1ContentInfo() {
             <span className="text-[9px] text-[#393939] ml-1">(*자세한 장소는 신청 완료 후 개별연락.)</span>
           </div>
         </div>
-        <div className=" mt-3">
+        {/* <div className=" mt-3">
           <span className="text-[10px] line-through text-[#CECECE]">200,000원</span>
           <span className="text-xs text-[#8B8B8B] ml-2">30% 할인</span>
-        </div>
+        </div> */}
         <div className="font-bold text-[#D64247] mt-2 space-x-5">
-          <span>140,000 원</span>
-          <span></span>
+          {/* <span>140,000 원</span> */}
+          <span>참가 무료</span>
         </div>
         <Button className="w-full mt-3 bg-[#D64247] text-white font-semibold tracking-[4.8px]" onPress={openInNewTab}>
           신청서 작성
@@ -32,12 +32,12 @@ export default function Detail1ContentInfo() {
       <Seperator />
       <div className=" flex flex-col items-center mt-4 space-y-4">
         <span>※ 신청서 작성하여 제출하셔야 신청 완료입니다.</span>
-        <span className="w-[70%]">※ 신청서 작성 후 참가자로 선정된 분에 한해 참가비 결제는 별도로 진행합니다.</span>
+        {/* <span className="w-[70%]">※ 신청서 작성 후 참가자로 선정된 분에 한해 참가비 결제는 별도로 진행합니다.</span> */}
       </div>
-      <div className="flex flex-col items-center mt-7 space-y-2">
+      {/* <div className="flex flex-col items-center mt-7 space-y-2">
         <span className="font-bold text-3xl text-white bg-color_main px-4 py-1 rounded-full">30%할인</span>
         <span className="text-color_main font-semibold">쿠폰 코드 : welcome썸타임즈</span>
-      </div>
+      </div> */}
     </>
   );
 }
