@@ -17,9 +17,9 @@ export default function Text2() {
             <span className="font-bold">부산 금정구</span>
             <span>에서 1박 2일</span>
           </div>
-          <div className="flex flex-col items-center font-bold">
-            <span>1차 : 10월 5일~6일 (28세-39세 솔로)</span>
-            <span>2차 : 10월 12일~13일 (40세-49세 솔로)</span>
+          <div className="flex flex-col items-center font-bold text-sm">
+            <span>1차 : 28세~39세 (10월 5일, 6일) 부산 금정구 힐링 테마농장</span>
+            <span>2차 : 28세~39세 (10월 12일, 13일) 부산 금정구 힐링 테마농장</span>
           </div>
         </div>
         <div className="flex flex-col items-center text-sm space-y-1">
