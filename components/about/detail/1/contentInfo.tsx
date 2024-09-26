@@ -8,7 +8,7 @@ export default function Detail1ContentInfo() {
   return (
     <>
       <div className="flex flex-col items-start mt-5 px-5">
-        <span className="font-semibold text-sm">(20/30)10월 5일, 6일 부산 금정구 힐링 테마농장</span>
+        <span className="font-semibold text-sm">1차 : 28세~39세 (10월 5일, 6일) 부산 금정구 힐링 테마농장</span>
         <div className="text-xs flex flex-col items-start space-y-1 mt-3">
           <span>대상 : 28세-39세 </span>
           <span>남자 : 6명 / 여자 : 6명</span>

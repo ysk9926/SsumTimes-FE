@@ -13,7 +13,7 @@ export default function Content() {
       {/* title */}
       <div className="flex flex-col">
         <div className="flex justify-start items-center">
-          <span className=" text-lg font-bold">1박 2일 썸타임즈 부산</span>
+          <span className=" text-lg font-bold">[가을시즌] 1박 2일 썸타임즈 부산</span>
           <div className=" pl-3">
             <IArrow />
           </div>
@@ -32,7 +32,7 @@ export default function Content() {
             width={500}
             height={300}
           />
-          <span className="text-xs">(20/30) 10월 5일, 6일 부산 금정구 힐링 테마농장</span>
+          <span className="text-xs">1차 : 28세~39세 (10월 5일, 6일) 부산 금정구 힐링 테마농장</span>
         </div>
         {/* image */}
         <div onClick={() => router.push("/about/detail/2")}>
@@ -44,7 +44,7 @@ export default function Content() {
             width={500}
             height={300}
           />
-          <span className="text-xs">(40) 10월 12일,13일 부산 금정구 힐링 테마농장</span>
+          <span className="text-xs">2차 : 28세~39세 (10월 12일, 13일) 부산 금정구 힐링 테마농장</span>
         </div>
       </div>
     </div>
