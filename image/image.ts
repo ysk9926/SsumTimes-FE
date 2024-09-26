@@ -15,7 +15,7 @@ export const locationImage =
 // 컨텐츠
 
 export const content1 =
-  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/e6980d0f-792a-4dcb-8d7b-d4a748309e00.jpg";
+  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/ec7d00f1-9576-4dc4-96d6-0c357ec9c785.jpg";
 
 export const content2 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/0d055f00-9ffe-4ce9-ba02-d615465e4a8a.jpg";
@@ -24,7 +24,7 @@ export const content3 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/f556651d-a76c-4303-9d87-6fa877c4adb6.jpg";
 
 export const content4 =
-  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/ab8af0c2-c056-48d8-b5ce-b9037a025c27.jpg";
+  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/d18ccbad-d5e8-48b6-9f62-8a0ddd106352.jpg";
 
 // 소개
 
@@ -36,3 +36,7 @@ export const about2 =
 
 export const about3 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/1d3bb535-5feb-418d-b3bc-1c0f81941d9e.jpg";
+
+// 2차 배경 사진
+export const about4 =
+  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/87819b60-0b7f-4548-a2b0-4ab6ed865f7d.jpg";

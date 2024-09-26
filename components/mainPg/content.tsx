@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import IArrow from "@/icon/global/arrow";
-import { locationImage } from "@/image/image";
+import { about4, locationImage } from "@/image/image";
 import { useRouter } from "next/navigation";
 
 export default function Content() {
@@ -36,14 +36,7 @@ export default function Content() {
         </div>
         {/* image */}
         <div onClick={() => router.push("/about/detail/2")}>
-          <Image
-            src={locationImage}
-            alt=""
-            objectFit="cover"
-            className="w-full rounded-lg my-2"
-            width={500}
-            height={300}
-          />
+          <Image src={about4} alt="" objectFit="cover" className="w-full rounded-lg my-2" width={500} height={300} />
           <span className="text-xs">2차 : 28세~39세 (10월 12일, 13일) 부산 금정구 힐링 테마농장</span>
         </div>
       </div>
