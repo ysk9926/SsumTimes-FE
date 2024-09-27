@@ -21,7 +21,7 @@ export const content2 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/0d055f00-9ffe-4ce9-ba02-d615465e4a8a.jpg";
 
 export const content3 =
-  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/f556651d-a76c-4303-9d87-6fa877c4adb6.jpg";
+  "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/42bd63f5-9592-481b-b1be-8dacd4f02c68.jpg";
 
 export const content4 =
   "https://sometimes-image.s3.ap-northeast-2.amazonaws.com/content-image/d18ccbad-d5e8-48b6-9f62-8a0ddd106352.jpg";
